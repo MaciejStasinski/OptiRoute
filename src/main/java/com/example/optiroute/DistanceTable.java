@@ -34,7 +34,7 @@ public class DistanceTable {
             return distance;
         }
 
-        URL dist = new URL("https://maps.googleapis.com/maps/api/distancematrix/json?origins="+x+"&destinations="+y+"&key=AIzaSyDRdc0rfJc72y6ypdGFe0u6BpKfk30hIg8");
+        URL dist = new URL("https://maps.googleapis.com/maps/api/distancematrix/json?origins="+x+"&destinations="+y+"&key=****************");
         InputStreamReader googleUrl = new InputStreamReader(dist.openStream());
         JsonObject jsonObject = new JsonParser().parse(googleUrl).getAsJsonObject();
         String a =jsonObject.toString();
